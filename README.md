@@ -1,4 +1,4 @@
-<span style="color:purple"> ### std::cout << "Hello Anthony Lupica\n"; </span>
+<span style="color:purple"> std::cout << "Hello Anthony Lupica\n"; </span>
 
 <span style="color:purple"> #### A bit about me...  </span>
 I grew up in Concord Twp, Ohio.
