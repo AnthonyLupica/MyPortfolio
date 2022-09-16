@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--  
+    Computer Graphics Term Project 2022 : StarryNight 
+    
+    --Controls--
+
+    Active:
+    down arrow - Zoom Out
+    up arrow   - zoom in
+    'r' key    - reverse rotation direction
+
+    Passive:
+    mouse move - accelerate rotation according to mouse speed
+-->
+
+<html lang="en-US">
+    <head>
+        <!-- title of web page in URL -->
+        <title>CG-TermProject-AnthonyLupica</title>
+
+        <!-- scripts for vertex shader and fragment shader -->
+        <script id="vertex-shader" type="x-shader/x-vertex">
+            attribute vec3 vPosition;
+            attribute float pointSize;
+            varying vec3 fColor;
+
+            uniform mat4 transformMatrix;
+            
+            void main()
+            {   
+                fColor = vec3(1.0, 1.0, 1.0);
+                gl_Position = transformMatrix * vec4(vPosition, 1);
+                gl_PointSize = pointSize;
+            }
+        </script>
+        <script id="fragment-shader" type="x-shader/x-fragment">
+            precision mediump float;
+            varying vec3 fColor;
+
+            void main()
+            {
+                gl_FragColor = vec4(fColor, 1);
+            }
+        </script>
+
+        <!-- include any external libraries here -->
+        <script type="text/javascript" src="gl-matrix.js"></script>
+
+        <!-- include TermProject.js here and call with window.onload event -->
+        <script type="text/javascript" src="StarryNight.js"></script>
+    </head>
+    <body>
+        <canvas id="TermProject">
+            <!-- if this line is reached, the canvas element could not be processed -->
+            Oh no! Looks like your browser doesn't support HTML5
+        </canvas>
+        <!-- Use a script to set the canvas width/height to the window width/height -->
+        <script>
+            const getCanvas = document.getElementById('TermProject');
+            getCanvas.width = window.innerWidth;
+            getCanvas.height = window.innerHeight;
+        </script>
+    </body>
+</html>

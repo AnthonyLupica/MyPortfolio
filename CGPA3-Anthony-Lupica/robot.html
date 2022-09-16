@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<!--  
+1. Create a 3D robot in WebGL using your favorite shapes (triangles, squares,
+blocks, cylinders, ...) and colors.
+2. The robot should have legs, arms, eyes, a head, and a chest.
+3. Add an interactive menu in your program.
+4. Make your program accept keyboard input.
+5. Make your robot animate according to the following menu/key commends:
+    1. Blink / “b”: blinks eyes
+    2. Color / “c”: changes colors (any colors)  [had to leave this command out. Couldn't figure it out]
+    3. Jump / “j”: jumps up and down
+    4. Turn / “t”: turns around
+    5. Wave / “w”: waves arms
+    6. Quit / “q”: quits the program
+-->
+
+<html lang="en-US">
+    <head>
+        <!-- title of web page in URL -->
+        <title>CG-PA3-AnthonyLupica</title>
+
+        <!-- scripts for vertex shader and fragment shader -->
+        <script id="vertex-shader" type="x-shader/x-vertex">
+            attribute vec4 vPosition;
+            attribute vec4 vColor;
+            varying vec4 fColor;
+
+            uniform mat4 modelViewMatrix;
+            uniform mat4 projectionMatrix;
+            
+            void main()
+            {
+                fColor = vColor;
+                gl_Position = projectionMatrix * modelViewMatrix * vPosition;
+            }
+        </script>
+        <script id="fragment-shader" type="x-shader/x-fragment">
+            precision mediump float;
+            varying vec4 fColor;
+
+            void main()
+            {
+                gl_FragColor = fColor;
+            }
+        </script>
+
+        <!-- include any files from the common folder here -->
+        <script type="text/javascript" src="Common/webgl-utils.js"></script>
+        <script type="text/javascript" src="Common/initShaders.js"></script>
+        <script type="text/javascript" src="Common/MV.js"></script>
+
+        <!-- include robot.js here and call with onload event -->
+        <script type="text/javascript" src="robot.js"></script>
+    </head>
+    <body>
+        <!-- the menu for user input -->
+        <p><strong>Hi! I'm Ro-bot...beep boop.</strong></p>
+        <pre>
+            <strong>I know how to...<br></strong>
+            <i id="blink"><strong>Blink</strong></i> <i>/ “b”</i>
+            <i id="jump"><strong>Jump</strong></i> <i>/ “j”</i>
+            <i id="turn"><strong>Turn</strong></i> <i>/ “t”</i>
+            <i id="wave"><strong>Wave</strong></i> <i>/ “w”</i>
+            
+            <i id="default" style="color:white"><strong>Ro-bot is shy, please be careful when speaking to him...</strong></i> 
+            
+            <i id="quit"><strong>Quit</strong></i> <i>/ “q”</i>
+            <hr>
+            Tell Ro-bot what to do <input type="text" size="40" onkeydown="menu(event)" id="inputBox">
+        </pre>
+
+        <p id="test"></p>
+        
+        <!-- script for handling keyboard input -->
+        <script>
+            // triggered on key enter into text box
+            function menu(event) 
+            {
+                // reset colors to black
+                document.getElementById("blink").style.color = "black";
+                document.getElementById("jump").style.color = "black";
+                document.getElementById("turn").style.color = "black";
+                document.getElementById("wave").style.color = "black";
+
+                // clear the input box buffer
+                document.getElementById("inputBox").value = " ";
+
+                // white-out invalid input message
+                document.getElementById("default").style.color = "white";
+
+                // switch statement to highlight the action requested
+                switch(event.key) 
+                {
+                    case 'b':
+                        myElement = document.getElementById("blink");
+                        myElement.style.color = "red";
+                        break;
+                    case 'j':
+                        myElement = document.getElementById("jump");
+                        myElement.style.color = "red";
+                        break;
+                    case 't':
+                        myElement = document.getElementById("turn");
+                        myElement.style.color = "red";
+                        break;
+                    case 'w':
+                        myElement = document.getElementById("wave");
+                        myElement.style.color = "red";
+                        break;
+                    case 'q':
+                        // code to quit the program
+                        window.close();
+                        break;
+                    default:
+                        document.getElementById("default").style.color = "black";
+                        break;
+                }
+            }
+        </script>
+        <canvas id="robot-home" width="550" height="350">
+            <!-- if this line is reached, the canvas element could not be processed -->
+            Oh no! Looks like your browser doesn't support HTML5
+        </canvas>
+        <!-- display a message beneath the canvas -->
+        <i><br><br>Anthony Lupica [arl127@uakron.edu]</i>
+    </body>
+</html>
