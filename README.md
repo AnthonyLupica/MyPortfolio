@@ -1,4 +1,4 @@
-<span style="background-color:yellow">
+<p style="color:purple;">
 ### std::cout << "Hello Anthony Lupica\n";
 
 #### A bit about me...
@@ -16,4 +16,4 @@ I'm committed to taking on any and all challenges coming my way as I continue do
 **In this Repository** you'll find...
 - my résumé
 - various projects I'm proud of 
-<\span>
+<\p>
