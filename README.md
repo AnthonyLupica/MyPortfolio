@@ -3,9 +3,9 @@
 ### std::cout << "Hello Anthony Lupica\n";
 
 #### A bit about me...
-I grew up in Concord Twp, Ohio.
-I was born June 12, 2000.
-I'm now at the University of Akron studying Computer Science 
+I grew up in Concord Twp, Ohio. <br>
+I was born June 12, 2000. <br>
+I'm now at the University of Akron studying Computer Science <br>
 
 My two earliest loves were Guitar and Basketball, which have held through time. Now, I'm very initrigued by writing, film, and videogames. The latter two were the interests that originally brought me to Computer Science. I wanted to know a little more, not only about the artistic side, but how they are accomplished technically. I'd like to make that a long-term goal of mine.
 
