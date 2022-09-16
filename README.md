@@ -1,7 +1,6 @@
-<span style="color:purple">
-### std::cout << "Hello Anthony Lupica\n";
+<span style="color:purple"> ### std::cout << "Hello Anthony Lupica\n"; </span>
 
-#### A bit about me...
+<span style="color:purple"> #### A bit about me...  </span>
 I grew up in Concord Twp, Ohio.
 I was born June 12, 2000.
 I'm now at the University of Akron studying Computer Science 
@@ -13,7 +12,7 @@ My two earliest loves were Guitar and Basketball, which have held through time. 
 I learned here that I care alot about this stuff; It's interesting to me all the way down, below the elegance of the screen. 
 I'm committed to taking on any and all challenges coming my way as I continue down this career path.
 
-**In this Repository** you'll find...
+<span style="color:purple"> **In this Repository** you'll find... </span>
 - my résumé
 - various projects I'm proud of 
-</span>
+
