@@ -6,7 +6,7 @@ Assigned hashing technique: Cuckoo Hashing
 
 **Deliverables:**
 
-      1) A research paper ("cuckooHash.pdf")
+      1) A research paper ("CuckooHash.pdf")
       2) Supporting code that works (runs) and supports your research (using your programming skill in
           C++).
 
