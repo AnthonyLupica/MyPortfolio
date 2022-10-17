@@ -47,4 +47,3 @@ functions, etc…
     3) Your program should run tests against ONE other experimenters;
     4) Make sure your program can pass the test cases before submitting the code.
     
-See cuckooHash.pdf for more project details
