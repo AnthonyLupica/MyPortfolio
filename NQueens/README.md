@@ -12,14 +12,3 @@ Specific requirements:
 2. Your program solves N-queens with specified position for the 1st Queen.
 
 3. Your program will save the solution to a .csv file; it should have the same format as the input file. 
-
-4. Download my grading program & grade your solutions for different Ns. For example, N=4, 8, 16, 20.
-
-Submission instructions:
-Submit an electronic copy of the program using project1 dropbox at Brightplace. You are required to zip your submission inside an archive. Follow these steps:
-
-1. Create a folder named zippy_1 (but use your name/uanetID). 
-2. Place just the source file(s) inside the folder.
-3. Right-click on the folder and choose Send To... Compressed Folder (or use some other Zip utility to archive the entire folder). I think one file should be sufficient for this project.
-4. Drop this single zipped file in your dropbox at Brightplace.
-Be sure to submit your working solution before the due date! Do not submit non-working programs. The submission time will be used to assess late penalties.
