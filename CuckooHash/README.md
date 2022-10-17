@@ -1,8 +1,8 @@
-#### Data Structures Project 3: Hashing 
+## Data Structures Project 3: Hashing 
 
 Assigned hashing technique: Cuckoo Hashing
 
-##### Details
+### Details
 
 **Deliverables:**
 
