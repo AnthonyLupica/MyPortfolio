@@ -1,30 +1,15 @@
-# Data Structures Project3 - Hashing 
+#### Data Structures Project 3: Hashing 
 
-Assigned CuckooHash
-
-# Instructions
+Assigned hashing technique: Cuckoo Hashing
 
 
-The Data Structures Project 3
-
-Outline for CS316 ‘Project Hash’
-
-Project:
-
-This next project is called Project Hash. Refer to project 2 for any details about these class projects, and
-the theme is test and measure.
+##### Details
 
 Deliverables:
 
-Same deliverables that includes a compiled research document and C ++ code
-
-
-Repeating the requirements:
-   1) A research paper (use the provided example as your guide). Research papers 10 pages (no code);
+   1) A research paper
    2) Supporting code that works (runs) and supports your research (using your programming skill in
        C++).
-
-
 
 Input and Output:
 
@@ -32,20 +17,7 @@ Standard C++ programs can be invoked using any IDE or the program may be invoked
 command-line. The inputs are user defined test cases and the output for this project are the results
 which eventually determine what is empirically true about the data structure. Write this code and
 maintain a separate analysis with your results from your experiments. Simulate different loads, different
-inputs/outputs, different conditions, etc., and form a hypothesis. As seen in the example research
-document, the analysis can be formatted in any number of ways.
-
-A project may not be graded
-You must have included one other experimenter, provided true, runtime and space analytics found in
-our materials regarding hashing and your paper must be 10 fully qualified pages. (Paper is 10 pages and
-does not include my code.)
-
-How do I know that my project will be graded?
-Did you:
-    - Include one other experimenter?
-    - Provide true, runtime and space analytics found in our materials regarding hashing?
-    - Submit 10 pages that did not include any code examples?
-    - Provide working code?
+inputs/outputs, different conditions, etc., and form a hypothesis.
 
 Test case requirement:
 
@@ -60,11 +32,6 @@ IMPORTANT: For you to receive a grade for this project you must:
    2) Use time and space complexity formulas to explain your findings.
    3) Paper should be 10 pages and this effort do not include code examples in the research doc.
    4) Working code that is yours and your partners.
-
-Without one other experimenter the paper will not be graded. Without providing true, runtime and
-space analytics found in our materials regarding hashing the paper will not be graded. Paper is 10 pages
-and does not include my code.
-
 
 Matchup chart:                               Assigned to           Experiment
                                                                    with
@@ -83,22 +50,6 @@ H6 - Cuckoo hashing                          20,9,18,27            Anyone
 H7 - Hopscotch hashing                       1,10,19,28            Anyone
 
 H8 - Two-choice hashing                      2,11,20               Anyone
-
-
-
-
-The list of experimenters can be found in the project folder, aptly named ‘list of experimenters’.
-Remember, there intentionally are more possible experimenters listed above and we only need ONE
-other test instances.
-
-Note for your project to receive a grade, you must find a partner experimenter as mentioned above.
-Test case ideas:
-Same as before
-
-How do I get my project to be graded?
-Include one other experimenter. Provide true, runtime and space analytics found in our materials
-regarding hashing. Paper must be 10 fully qualified pages. (Paper is 10 pages and does not include my
-code examples.)
 
 Sourcecode:
 You must create your own source code that is used as the focus or basis of the test and subsequent
