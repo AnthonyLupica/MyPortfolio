@@ -4,7 +4,7 @@
 
 #### A bit about me...
 I grew up in Concord Twp, Ohio. <br>
-I am now at the **University of Akron** studying Computer Science. <br>
+I am now at the **University of Akron** studying **Computer Science**. <br>
 
 My two earliest loves were Guitar and Basketball, which have held through time. Now, I'm very initrigued by writing, film, and videogames. 
 The latter two were the interests that originally brought me to Computer Science. I wanted to know more, not only about the artistic side, 
@@ -14,5 +14,5 @@ But, I learned here that I care alot about this stuff. It's interesting to me al
 I'm committed to taking on any and all challenges coming my way as I continue down this career path.
 
 **In this Repository** you'll find... 
-- my resume
-- several of my past projects with their documentations 
+- my **resume**
+- several of my **past projects** with their documentations 
