@@ -10,4 +10,4 @@
 this repository serves as an archive for my past school projects <br />
 inside you'll find... 
 - my resume
-- several project folders w/ source and documentation on the project goal
+- a few of my projects w/ source and documentation on the project goal
